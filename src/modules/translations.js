@@ -27,12 +27,32 @@ export const translations = {
       { title: "Local Guides", text: "Friendly local guides, translators, and companions during treatment." },
     ],
 
+    therapeuticTitle: "Therapeutic Services We Offer",
+    therapeuticServices: [
+      {
+        title: "Cosmetic Surgery",
+        line1: "Modern techniques for face and body aesthetics",
+        line2: "with natural and balanced results.",
+      },
+      {
+        title: "Cosmetic Dentistry",
+        line1: "Smile design, veneers, whitening, and more",
+        line2: "for a confident, brighter smile.",
+      },
+      {
+        title: "Hair Transplant",
+        line1: "Personalized plans and advanced methods",
+        line2: "for natural-looking hair density.",
+      },
+    ],
+
     aboutTitle: "About Us",
     aboutText:
       "Welcome to SKYIST GROUP, where passion meets expertise! We are a dedicated team of travel enthusiasts committed to showcasing Turkey’s beauty to the world. With years of experience in the tourism industry, we understand what it takes to create extraordinary travel experiences.",
 
     contactTitle: "Contact Us",
-    contactText: "You can reach us using the details below:",
+    // ✅ updated
+    contactText: "You can reach us using the details below Our call center is available 24/7:",
 
     footer: {
       privacyBtn: "Privacy Policy",
@@ -42,10 +62,7 @@ export const translations = {
     privacy: {
       title: "Privacy Policy",
       sections: [
-        {
-          heading: "Who we are",
-          paras: ["Our website address is: http://skyistgroup.com."],
-        },
+        { heading: "Who we are", paras: ["Our website address is: http://skyistgroup.com."] },
         {
           heading: "Comments",
           paras: [
@@ -65,7 +82,7 @@ export const translations = {
             "If you leave a comment on our site you may opt-in to saving your name, email address and website in cookies. These are for your convenience so that you do not have to fill in your details again when you leave another comment. These cookies will last for one year.",
             "If you visit our login page, we will set a temporary cookie to determine if your browser accepts cookies. This cookie contains no personal data and is discarded when you close your browser.",
             "When you log in, we will also set up several cookies to save your login information and your screen display choices. Login cookies last for two days, and screen options cookies last for a year. If you select “Remember Me”, your login will persist for two weeks. If you log out of your account, the login cookies will be removed.",
-            "If you edit or publish an article, an additional cookie will be saved in your browser. This cookie includes no personal data and simply indicates the post ID of the article you just edited. It expires after 1 day.",
+            "If you edit or publish an article, an additional cookie will be saved in your browser. This cookie contains no personal data and simply indicates the post ID of the article you just edited. It expires after 1 day.",
           ],
         },
         {
@@ -75,10 +92,7 @@ export const translations = {
             "These websites may collect data about you, use cookies, embed additional third-party tracking, and monitor your interaction with that embedded content, including tracking your interaction with the embedded content if you have an account and are logged in to that website.",
           ],
         },
-        {
-          heading: "Who we share your data with",
-          paras: ["If you request a password reset, your IP address will be included in the reset email."],
-        },
+        { heading: "Who we share your data with", paras: ["If you request a password reset, your IP address will be included in the reset email."] },
         {
           heading: "How long we retain your data",
           paras: [
@@ -93,10 +107,7 @@ export const translations = {
             "You can also request that we erase any personal data we hold about you. This does not include any data we are obliged to keep for administrative, legal, or security purposes.",
           ],
         },
-        {
-          heading: "Where your data is sent",
-          paras: ["Visitor comments may be checked through an automated spam detection service."],
-        },
+        { heading: "Where your data is sent", paras: ["Visitor comments may be checked through an automated spam detection service."] },
       ],
     },
   },
@@ -129,12 +140,32 @@ export const translations = {
       { title: "Yerel Rehberler", text: "Tedavi boyunca rehber, tercüman ve refakatçi desteği." },
     ],
 
+    therapeuticTitle: "Sunduğumuz Tedavi Hizmetleri",
+    therapeuticServices: [
+      {
+        title: "Estetik Ameliyatlar",
+        line1: "Yüz ve vücut estetiğinde modern tekniklerle",
+        line2: "doğal ve dengeli sonuçlar hedefliyoruz.",
+      },
+      {
+        title: "Diş Estetiği",
+        line1: "Gülüş tasarımı, kaplama ve beyazlatma ile",
+        line2: "daha özgüvenli bir gülüş kazandırıyoruz.",
+      },
+      {
+        title: "Saç Ekimi",
+        line1: "Kişiye özel planlama ve gelişmiş yöntemlerle",
+        line2: "doğal görünümlü sonuçlar sunuyoruz.",
+      },
+    ],
+
     aboutTitle: "Hakkımızda",
     aboutText:
       "SKYIST GROUP’a hoş geldiniz! Tutku ve uzmanlığın buluştuğu yerdeyiz. Türkiye’nin güzelliklerini dünyaya tanıtmayı amaçlayan, turizm meraklısı uzman bir ekibiz. Turizm sektöründeki yıllara dayanan deneyimimizle, olağanüstü seyahat deneyimleri oluşturmanın ne gerektirdiğini biliyoruz.",
 
     contactTitle: "İletişim",
-    contactText: "Aşağıdaki bilgilerden bize ulaşabilirsiniz:",
+    // ✅ updated
+    contactText: "Aşağıdaki bilgilerden bize ulaşabilirsiniz Çağrı merkezimize 7/24 ulaşabilirsiniz:",
 
     footer: {
       privacyBtn: "Gizlilik Politikası",
@@ -144,10 +175,7 @@ export const translations = {
     privacy: {
       title: "Gizlilik Politikası",
       sections: [
-        {
-          heading: "Biz kimiz",
-          paras: ["Web sitemizin adresi: http://skyistgroup.com."],
-        },
+        { heading: "Biz kimiz", paras: ["Web sitemizin adresi: http://skyistgroup.com."] },
         {
           heading: "Yorumlar",
           paras: [
@@ -177,10 +205,7 @@ export const translations = {
             "Bu web siteleri sizin hakkınızda veri toplayabilir, çerez kullanabilir, üçüncü taraf izlemeyi gömebilir ve bu gömülü içerikle etkileşiminizi izleyebilir. Hesabınız varsa ve giriş yaptıysanız etkileşim takibi de buna dahildir.",
           ],
         },
-        {
-          heading: "Verilerinizi kimlerle paylaşıyoruz",
-          paras: ["Parola sıfırlama talep ederseniz, IP adresiniz sıfırlama e-postasına dahil edilir."],
-        },
+        { heading: "Verilerinizi kimlerle paylaşıyoruz", paras: ["Parola sıfırlama talep ederseniz, IP adresiniz sıfırlama e-postasına dahil edilir."] },
         {
           heading: "Verilerinizi ne kadar süre saklıyoruz",
           paras: [
@@ -195,10 +220,7 @@ export const translations = {
             "Ayrıca hakkınızda tuttuğumuz kişisel verileri silmemizi talep edebilirsiniz. Bu, idari, yasal veya güvenlik amaçlarıyla saklamak zorunda olduğumuz verileri kapsamaz.",
           ],
         },
-        {
-          heading: "Verileriniz nereye gönderilir",
-          paras: ["Ziyaretçi yorumları, otomatik bir spam tespit hizmeti aracılığıyla kontrol edilebilir."],
-        },
+        { heading: "Verileriniz nereye gönderilir", paras: ["Ziyaretçi yorumları, otomatik bir spam tespit hizmeti aracılığıyla kontrol edilebilir."] },
       ],
     },
   },
@@ -231,12 +253,32 @@ export const translations = {
       { title: "المرشدون المحليون", text: "مرشدون ومترجمون ومرافقون طوال فترة العلاج." },
     ],
 
+    therapeuticTitle: "الخدمات العلاجية التي نقدمها",
+    therapeuticServices: [
+      {
+        title: "عمليات التجميل",
+        line1: "نعتمد تقنيات حديثة لتحسين مظهرك",
+        line2: "بنتائج طبيعية وآمنة تناسبك.",
+      },
+      {
+        title: "تجميل الأسنان",
+        line1: "ابتسامة هوليوود، عدسات وتبييض",
+        line2: "لابتسامة أجمل وثقة أكبر.",
+      },
+      {
+        title: "زراعة الشعر",
+        line1: "تقنيات متقدمة وخطة علاجية مخصصة",
+        line2: "لاستعادة كثافة الشعر بمظهر طبيعي.",
+      },
+    ],
+
     aboutTitle: "معلومات عنا",
     aboutText:
       "مرحبًا بكم في SKYIST GROUP، حيث يلتقي الشغف بالخبرة! نحن فريق متخصص من عشّاق السفر ملتزمون بإظهار جمال تركيا للعالم. وبفضل سنوات من الخبرة في مجال السياحة، ندرك تمامًا ما يلزم لصنع تجارب سفر استثنائية.",
 
     contactTitle: "اتصل بنا",
-    contactText: "يمكنك التواصل معنا عبر المعلومات التالية:",
+    // ✅ updated
+    contactText: "يمكنكم التواصل معنا عبر المعلومات التالية مركز الاتصال لدينا متاح 24/7:",
 
     footer: {
       privacyBtn: "سياسة الخصوصية",
@@ -246,10 +288,7 @@ export const translations = {
     privacy: {
       title: "سياسة الخصوصية",
       sections: [
-        {
-          heading: "من نحن",
-          paras: ["عنوان موقعنا الإلكتروني هو: http://skyistgroup.com."],
-        },
+        { heading: "من نحن", paras: ["عنوان موقعنا الإلكتروني هو: http://skyistgroup.com."] },
         {
           heading: "التعليقات",
           paras: [
@@ -279,10 +318,7 @@ export const translations = {
             "قد تجمع تلك المواقع بيانات عنك، وتستخدم ملفات تعريف الارتباط، وتضمّن تتبعًا من طرف ثالث، وتراقب تفاعلك مع المحتوى المضمَّن، بما في ذلك تتبع تفاعلك إذا كان لديك حساب وقمت بتسجيل الدخول على ذلك الموقع.",
           ],
         },
-        {
-          heading: "مع من نشارك بياناتك",
-          paras: ["إذا طلبت إعادة تعيين كلمة المرور، فسيتم تضمين عنوان الـ IP الخاص بك في رسالة إعادة التعيين."],
-        },
+        { heading: "مع من نشارك بياناتك", paras: ["إذا طلبت إعادة تعيين كلمة المرور، فسيتم تضمين عنوان الـ IP الخاص بك في رسالة إعادة التعيين."] },
         {
           heading: "مدة الاحتفاظ ببياناتك",
           paras: [
@@ -297,10 +333,7 @@ export const translations = {
             "كما يمكنك طلب حذف أي بيانات شخصية نحتفظ بها عنك. لا يشمل ذلك البيانات التي نلتزم بالاحتفاظ بها لأغراض إدارية أو قانونية أو أمنية.",
           ],
         },
-        {
-          heading: "إلى أين تُرسل بياناتك",
-          paras: ["قد يتم فحص تعليقات الزوار عبر خدمة آلية لاكتشاف الرسائل المزعجة (Spam)."],
-        },
+        { heading: "إلى أين تُرسل بياناتك", paras: ["قد يتم فحص تعليقات الزوار عبر خدمة آلية لاكتشاف الرسائل المزعجة (Spam)."] },
       ],
     },
   },

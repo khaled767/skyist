@@ -4,6 +4,12 @@ import logo from "../assets/logo.png";
 import doctorImg from "../assets/doctor.png";
 import istanbulImg from "../assets/istanbul.jpeg";
 
+// ✅ NEW: real images (place them in src/assets/services/)
+// IMPORTANT: rename files to avoid spaces (recommended)
+import cosmeticDentistryImg from "../assets/services/cosmatic-dentistry.jpg";
+import hairTransplantImg from "../assets/services/hair-transplant.jpeg";
+import cosmeticSurgeryImg from "../assets/services/cosmatic-surgery.jpg";
+
 const LANGS = [
   { code: "tr", label: "Türkçe", flag: "🇹🇷" },
   { code: "en", label: "English", flag: "🇬🇧" },
@@ -109,7 +115,8 @@ function renderHomeHeroHTML(t, lang) {
         ${lang === "tr" ? "Hemen İletişim" : lang === "ar" ? "تواصل الآن" : "Contact Now"}
       </button>
 
-      <a class="btn ghost" href="https://wa.me/905379474222" target="_blank" rel="noopener">
+      <!-- ✅ WhatsApp number updated -->
+      <a class="btn ghost" href="https://wa.me/905300799487" target="_blank" rel="noopener">
         WhatsApp
       </a>
     </div>
@@ -134,6 +141,9 @@ function setLanguage(lang) {
 
   const heroLeftHTML =
     page === "privacy" ? renderPrivacyPolicyHTML(t) : renderHomeHeroHTML(t, lang);
+
+  // ✅ therapeutic images map
+  const therapeuticImages = [cosmeticSurgeryImg, cosmeticDentistryImg, hairTransplantImg];
 
   app.innerHTML = `
     <!-- NAVBAR -->
@@ -229,6 +239,34 @@ function setLanguage(lang) {
         </div>
       </section>
 
+      <!-- ✅ THERAPEUTIC SERVICES (NO BUTTON NOW) -->
+      <section id="therapeutic" class="section therapeutic-section">
+        <div class="container">
+          <h2 class="section-title centered">${t.therapeuticTitle}</h2>
+
+          <div class="therapy-grid">
+            ${t.therapeuticServices
+              .map((item, idx) => {
+                const imgSrc = therapeuticImages[idx] || therapeuticImages[0];
+                return `
+                  <article class="therapy-card">
+                    <div class="therapy-img-wrap">
+                      <img class="therapy-img" src="${imgSrc}" alt="${item.title}" loading="lazy" />
+                    </div>
+
+                    <div class="therapy-body">
+                      <h3 class="therapy-title">${item.title}</h3>
+                      <p class="therapy-line">${item.line1}</p>
+                      <p class="therapy-line">${item.line2}</p>
+                    </div>
+                  </article>
+                `;
+              })
+              .join("")}
+          </div>
+        </div>
+      </section>
+
       <!-- ABOUT -->
       <section id="about" class="section alt">
         <div class="container">
@@ -239,7 +277,7 @@ function setLanguage(lang) {
         </div>
       </section>
 
-      <!-- ISTANBUL (before contact) -->
+      <!-- ISTANBUL -->
       <section class="istanbul-section" style="--istanbul:url('${istanbulImg}')">
         <div class="istanbul-overlay">
           <div class="container istanbul-inner">
@@ -273,24 +311,24 @@ function setLanguage(lang) {
 
               <div class="contact-item">
                 <span class="contact-label">Phone:</span>
-                <a href="tel:+905379474222">+90 537 947 4222</a>
+                <a href="tel:+90531 945 7388">+90 531 945 7388</a>
               </div>
 
               <div class="contact-item">
                 <span class="contact-label">Phone:</span>
-                <a href="tel:+905050880000">+90 505 088 0000</a>
+                <a href="tel:+905300799487">+90 530 079 9487</a>
               </div>
 
               <div class="contact-item">
                 <span class="contact-label">Email:</span>
-                <a href="mailto:skyistgroup@gmail.com">skyistgroup@gmail.com</a>
+                <a href="mailto:info@skyistgroup.com">info@skyistgroup.com</a>
               </div>
 
               <div class="contact-item address">
                 <span class="contact-label">Address:</span>
                 <p>
-                  ZAFER MAH : 185 SK BABACAN PREMIUM B1 D 319<br>
-                  ESENYURT / İSTANBUL TURKIYE
+                  ZAFER MAH. 185. SK. BABACAN PREMİUM B BLOK NO: 4 B<br>
+                  İÇ KAPI NO: 319 ESENYURT/ İSTANBUL
                 </p>
               </div>
 
@@ -311,8 +349,8 @@ function setLanguage(lang) {
         </div>
       </footer>
 
-      <!-- Floating WhatsApp urgent button -->
-      <a class="wa-fab" href="https://wa.me/905379474222" target="_blank" rel="noopener" aria-label="WhatsApp urgent contact">
+      <!-- ✅ Floating WhatsApp urgent button updated -->
+      <a class="wa-fab" href="https://wa.me/905300799487" target="_blank" rel="noopener" aria-label="WhatsApp urgent contact">
         WhatsApp
       </a>
 
@@ -324,7 +362,6 @@ function setLanguage(lang) {
     btn.addEventListener("click", () => {
       const id = btn.dataset.link;
 
-      // if we're on privacy view, return to home first then scroll
       if (getPage() === "privacy") {
         setPage("home");
         setLanguage(localStorage.getItem("lang") || "tr");
@@ -332,7 +369,6 @@ function setLanguage(lang) {
         return;
       }
 
-      // normal
       scrollToId(id);
     });
   });
@@ -357,7 +393,7 @@ function setLanguage(lang) {
     });
   }
 
-  // ✅ Auto focus on privacy scroll container
+  // Auto focus on privacy scroll container
   if (page === "privacy") {
     requestAnimationFrame(() => {
       const policyBox = app.querySelector(".policy-card");
