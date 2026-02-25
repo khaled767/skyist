@@ -30,19 +30,24 @@ export const translations = {
     therapeuticTitle: "Therapeutic Services We Offer",
     therapeuticServices: [
       {
-        title: "Cosmetic Surgery",
-        line1: "Modern techniques for face and body aesthetics",
-        line2: "with natural and balanced results.",
+        title: "Facial Cosmetic Surgery",
+        line1: "Advanced facial aesthetics techniques",
+        line2: "for natural, balanced results.",
       },
       {
         title: "Cosmetic Dentistry",
-        line1: "Smile design, veneers, whitening, and more",
+        line1: "Dental implant, smile design, veneers, whitening",
         line2: "for a confident, brighter smile.",
       },
       {
         title: "Hair Transplant",
         line1: "Personalized plans and advanced methods",
         line2: "for natural-looking hair density.",
+      },
+      {
+        title: "Body Cosmetic Surgery",
+        line1: "Modern body contouring procedures",
+        line2: "to enhance shape with safe outcomes.",
       },
     ],
 
@@ -51,7 +56,6 @@ export const translations = {
       "Welcome to SKYIST GROUP, where passion meets expertise! We are a dedicated team of travel enthusiasts committed to showcasing Turkey’s beauty to the world. With years of experience in the tourism industry, we understand what it takes to create extraordinary travel experiences.",
 
     contactTitle: "Contact Us",
-    // ✅ updated
     contactText: "You can reach us using the details below Our call center is available 24/7:",
 
     footer: {
@@ -143,19 +147,24 @@ export const translations = {
     therapeuticTitle: "Sunduğumuz Tedavi Hizmetleri",
     therapeuticServices: [
       {
-        title: "Estetik Ameliyatlar",
-        line1: "Yüz ve vücut estetiğinde modern tekniklerle",
+        title: "Yüz Estetiği",
+        line1: "Yüz estetiğinde modern tekniklerle",
         line2: "doğal ve dengeli sonuçlar hedefliyoruz.",
       },
       {
         title: "Diş Estetiği",
-        line1: "Gülüş tasarımı, kaplama ve beyazlatma ile",
+        line1: "Diş implant, gülüş tasarımı, kaplama beyazlatma ile",
         line2: "daha özgüvenli bir gülüş kazandırıyoruz.",
       },
       {
         title: "Saç Ekimi",
         line1: "Kişiye özel planlama ve gelişmiş yöntemlerle",
         line2: "doğal görünümlü sonuçlar sunuyoruz.",
+      },
+      {
+        title: "Vücut Estetiği",
+        line1: "Vücut şekillendirmede modern uygulamalarla",
+        line2: "güvenli ve etkili sonuçlar sunuyoruz.",
       },
     ],
 
@@ -164,8 +173,7 @@ export const translations = {
       "SKYIST GROUP’a hoş geldiniz! Tutku ve uzmanlığın buluştuğu yerdeyiz. Türkiye’nin güzelliklerini dünyaya tanıtmayı amaçlayan, turizm meraklısı uzman bir ekibiz. Turizm sektöründeki yıllara dayanan deneyimimizle, olağanüstü seyahat deneyimleri oluşturmanın ne gerektirdiğini biliyoruz.",
 
     contactTitle: "İletişim",
-    // ✅ updated
-    contactText: "Aşağıdaki bilgilerden bize ulaşabilirsiniz Çağrı merkezimize 7/24 ulaşabilirsiniz:",
+    contactText: "Aşağıdaki bilgilerden bize ulaşabilirsiniz. Çağrı merkezimiz 7/24 hizmetinizdedir:",
 
     footer: {
       privacyBtn: "Gizlilik Politikası",
@@ -256,19 +264,24 @@ export const translations = {
     therapeuticTitle: "الخدمات العلاجية التي نقدمها",
     therapeuticServices: [
       {
-        title: "عمليات التجميل",
-        line1: "نعتمد تقنيات حديثة لتحسين مظهرك",
+        title: "عمليات تجميل الوجه",
+        line1: "تقنيات حديثة لتحسين ملامح الوجه",
         line2: "بنتائج طبيعية وآمنة تناسبك.",
       },
       {
         title: "تجميل الأسنان",
-        line1: "ابتسامة هوليوود، عدسات وتبييض",
+        line1: "زراعة اسنان، ابتسامة هوليوود، عدسات وتبييض",
         line2: "لابتسامة أجمل وثقة أكبر.",
       },
       {
         title: "زراعة الشعر",
         line1: "تقنيات متقدمة وخطة علاجية مخصصة",
         line2: "لاستعادة كثافة الشعر بمظهر طبيعي.",
+      },
+      {
+        title: "عمليات تجميل الجسم",
+        line1: "إجراءات حديثة لتحسين القوام وتنسيق الجسم",
+        line2: "بخطة آمنة ونتائج متوازنة.",
       },
     ],
 
@@ -277,7 +290,6 @@ export const translations = {
       "مرحبًا بكم في SKYIST GROUP، حيث يلتقي الشغف بالخبرة! نحن فريق متخصص من عشّاق السفر ملتزمون بإظهار جمال تركيا للعالم. وبفضل سنوات من الخبرة في مجال السياحة، ندرك تمامًا ما يلزم لصنع تجارب سفر استثنائية.",
 
     contactTitle: "اتصل بنا",
-    // ✅ updated
     contactText: "يمكنكم التواصل معنا عبر المعلومات التالية مركز الاتصال لدينا متاح 24/7:",
 
     footer: {

@@ -8,7 +8,8 @@ import istanbulImg from "../assets/istanbul.jpeg";
 // IMPORTANT: rename files to avoid spaces (recommended)
 import cosmeticDentistryImg from "../assets/services/cosmatic-dentistry.jpg";
 import hairTransplantImg from "../assets/services/hair-transplant.jpeg";
-import cosmeticSurgeryImg from "../assets/services/cosmatic-surgery.jpg";
+import cosmeticSurgeryImg from "../assets/services/cosmatic-surgery.jpeg";
+import bodySurgeryImg from "../assets/services/body-surgery.jpg";
 
 const LANGS = [
   { code: "tr", label: "Türkçe", flag: "🇹🇷" },
@@ -142,8 +143,14 @@ function setLanguage(lang) {
   const heroLeftHTML =
     page === "privacy" ? renderPrivacyPolicyHTML(t) : renderHomeHeroHTML(t, lang);
 
-  // ✅ therapeutic images map
-  const therapeuticImages = [cosmeticSurgeryImg, cosmeticDentistryImg, hairTransplantImg];
+  // ✅ therapeutic images map (4 items)
+  // NOTE: for the new "Body Cosmetic Surgery" card we reuse cosmeticSurgeryImg (so it works without adding new image).
+  const therapeuticImages = [
+    cosmeticSurgeryImg,      // Face cosmetic
+    cosmeticDentistryImg,    // Dentistry
+    hairTransplantImg,       // Hair
+    bodySurgeryImg,      // Body cosmetic (reused)
+  ];
 
   app.innerHTML = `
     <!-- NAVBAR -->
@@ -326,9 +333,9 @@ function setLanguage(lang) {
 
               <div class="contact-item address">
                 <span class="contact-label">Address:</span>
-                <p>
+                <p class="contact-value">
                   ZAFER MAH. 185. SK. BABACAN PREMİUM B BLOK NO: 4 B<br>
-                  İÇ KAPI NO: 319 ESENYURT/ İSTANBUL
+                  İÇ KAPI NO: 319  ESENYURT/ İSTANBUL
                 </p>
               </div>
 
