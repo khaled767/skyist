@@ -27,7 +27,7 @@ export const translations = {
       { title: "Local Guides", text: "Friendly local guides, translators, and companions during treatment." },
     ],
 
-    therapeuticTitle: "Therapeutic Services We Offer",
+    therapeuticTitle: "Our Medical Turizm Services",
     therapeuticServices: [
       {
         title: "Facial Cosmetic Surgery",
@@ -35,17 +35,17 @@ export const translations = {
         line2: "for natural, balanced results.",
       },
       {
-        title: "Cosmetic Dentistry",
+        title: "Body Cosmetic Surgery",
         line1: "Dental implant, smile design, veneers, whitening",
         line2: "for a confident, brighter smile.",
       },
       {
-        title: "Hair Transplant",
+        title: "Cosmetic Dentistry",
         line1: "Personalized plans and advanced methods",
         line2: "for natural-looking hair density.",
       },
       {
-        title: "Body Cosmetic Surgery",
+        title: "Hair Transplant",
         line1: "Modern body contouring procedures",
         line2: "to enhance shape with safe outcomes.",
       },
@@ -144,7 +144,7 @@ export const translations = {
       { title: "Yerel Rehberler", text: "Tedavi boyunca rehber, tercüman ve refakatçi desteği." },
     ],
 
-    therapeuticTitle: "Sunduğumuz Tedavi Hizmetleri",
+    therapeuticTitle: "Sunduğumuz Sağlık Turizmi Hizmetleri",
     therapeuticServices: [
       {
         title: "Yüz Estetiği",
@@ -152,17 +152,17 @@ export const translations = {
         line2: "doğal ve dengeli sonuçlar hedefliyoruz.",
       },
       {
-        title: "Diş Estetiği",
+        title: "Vücut Estetiği",
         line1: "Diş implant, gülüş tasarımı, kaplama beyazlatma ile",
         line2: "daha özgüvenli bir gülüş kazandırıyoruz.",
       },
       {
-        title: "Saç Ekimi",
+        title: "Diş Estetiği",
         line1: "Kişiye özel planlama ve gelişmiş yöntemlerle",
         line2: "doğal görünümlü sonuçlar sunuyoruz.",
       },
       {
-        title: "Vücut Estetiği",
+        title: "Saç Ekimi",
         line1: "Vücut şekillendirmede modern uygulamalarla",
         line2: "güvenli ve etkili sonuçlar sunuyoruz.",
       },
@@ -261,7 +261,7 @@ export const translations = {
       { title: "المرشدون المحليون", text: "مرشدون ومترجمون ومرافقون طوال فترة العلاج." },
     ],
 
-    therapeuticTitle: "الخدمات العلاجية التي نقدمها",
+    therapeuticTitle: "خدماتنا في مجال السياحة الطبية",
     therapeuticServices: [
       {
         title: "عمليات تجميل الوجه",
@@ -269,17 +269,17 @@ export const translations = {
         line2: "بنتائج طبيعية وآمنة تناسبك.",
       },
       {
-        title: "تجميل الأسنان",
+        title: "عمليات تجميل الجسم",
         line1: "زراعة اسنان، ابتسامة هوليوود، عدسات وتبييض",
         line2: "لابتسامة أجمل وثقة أكبر.",
       },
       {
-        title: "زراعة الشعر",
+        title: "تجميل الاسنان",
         line1: "تقنيات متقدمة وخطة علاجية مخصصة",
         line2: "لاستعادة كثافة الشعر بمظهر طبيعي.",
       },
       {
-        title: "عمليات تجميل الجسم",
+        title: "زراعة الشعر",
         line1: "إجراءات حديثة لتحسين القوام وتنسيق الجسم",
         line2: "بخطة آمنة ونتائج متوازنة.",
       },

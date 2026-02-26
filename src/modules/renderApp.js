@@ -147,9 +147,10 @@ function setLanguage(lang) {
   // NOTE: for the new "Body Cosmetic Surgery" card we reuse cosmeticSurgeryImg (so it works without adding new image).
   const therapeuticImages = [
     cosmeticSurgeryImg,      // Face cosmetic
+    bodySurgeryImg,          // Body cosmetic (reused)
     cosmeticDentistryImg,    // Dentistry
     hairTransplantImg,       // Hair
-    bodySurgeryImg,      // Body cosmetic (reused)
+    
   ];
 
   app.innerHTML = `
@@ -318,7 +319,7 @@ function setLanguage(lang) {
 
               <div class="contact-item">
                 <span class="contact-label">Phone:</span>
-                <a href="tel:+90531 945 7388">+90 531 945 7388</a>
+                <a href="tel:+905319457388">+90 531 945 7388</a>
               </div>
 
               <div class="contact-item">

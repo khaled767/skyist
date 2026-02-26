@@ -538,6 +538,10 @@ body.privacy-mode .policy-card:focus{
   .therapy-grid {
     grid-template-columns: repeat(2, minmax(220px, 1fr)); /* ✅ 2 cards */
   }
+  .lang-menu{
+
+    right: -50px;
+  }
 }
 @media (max-width: 520px) {
   .therapy-grid {
@@ -629,3 +633,21 @@ body[dir="rtl"] .therapy-body {
   margin-top: 6px;
 }
 
+/* Fix reversed numbers/links in Arabic (RTL) */
+body[dir="rtl"] .contact-item a,
+body[dir="rtl"] .contact-item .contact-value{
+  direction: ltr;
+  unicode-bidi: isolate;
+  text-align: left;
+}
+
+/* keep the label itself RTL and aligned nicely */
+body[dir="rtl"] .contact-label{
+  direction: rtl;
+  unicode-bidi: isolate;
+}
+
+/* optional: keep phone/email in one line if possible */
+body[dir="rtl"] .contact-item a{
+  white-space: nowrap;
+}
