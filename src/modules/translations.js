@@ -21,10 +21,26 @@ export const translations = {
 
     servicesTitle: "Services We Provide",
     services: [
-      { title: "Tour Packages", text: "Tailored tour packages to match your interests and schedule." },
-      { title: "Hotel Booking", text: "Comfortable stays near hospitals and key locations." },
-      { title: "Transportation Service", text: "VIP transfers: airport pickup and city transportation." },
-      { title: "Local Guides", text: "Friendly local guides, translators, and companions during treatment." },
+      {
+        title: "Tour Packages",
+        text: "Tailored tour packages designed to make your stay in Türkiye enjoyable and comfortable.",
+      },
+      {
+        title: "Hotel Booking",
+        text: "Comfortable hotel accommodation near hospitals with options that suit your budget and preferences.",
+      },
+      {
+        title: "Transportation Service",
+        text: "VIP airport pickup and private transportation for a smooth and stress-free experience.",
+      },
+      {
+        title: "Local Guides",
+        text: "Professional translators and local assistants to accompany you throughout your medical journey.",
+      },
+      {
+        title: "Medical Touism Services",
+        text: "Complete coordination of your treatment journey, from hospital selection to travel planning and continuous support.",
+      },
     ],
 
     therapeuticTitle: "Our Medical Turizm Services",
@@ -50,6 +66,15 @@ export const translations = {
         line2: "to enhance shape with safe outcomes.",
       },
     ],
+
+  trustSection: {
+  title: "Trust & Our Partners",
+  subtitle: "Official certifications and carefully selected partner hospitals.",
+
+  licenseTitle: "OFFICIAL HEALTH TOURISM LICENSE",
+
+  partnerTitle: "OUR PARTNER HOSPITALS"
+},
 
     aboutTitle: "About Us",
     aboutText:
@@ -138,12 +163,27 @@ export const translations = {
 
     servicesTitle: "Sunduğumuz Hizmetler",
     services: [
-      { title: "Tur Paketleri", text: "İlgi alanınıza ve programınıza göre özel tur paketleri." },
-      { title: "Otel Rezervasyonu", text: "Hastanelere ve önemli noktalara yakın konforlu konaklama." },
-      { title: "Ulaşım Hizmeti", text: "VIP transfer: havaalanı karşılama ve şehir içi ulaşım." },
-      { title: "Yerel Rehberler", text: "Tedavi boyunca rehber, tercüman ve refakatçi desteği." },
+      {
+        title: "Tur Paketleri",
+        text: "İlgi alanlarınıza uygun, konforlu ve keyifli bir Türkiye deneyimi sunan özel tur paketleri.",
+      },
+      {
+        title: "Otel Rezervasyonu",
+        text: "Hastanelere yakın, konforlu ve bütçenize uygun otel seçenekleri sunuyoruz.",
+      },
+      {
+        title: "Ulaşım Hizmeti",
+        text: "VIP havaalanı karşılama ve özel araçlarla güvenli şehir içi ulaşım hizmeti.",
+      },
+      {
+        title: "Yerel Rehberler",
+        text: "Tedavi süreciniz boyunca profesyonel tercüman ve yerel danışman desteği sağlıyoruz.",
+      },
+      {
+        title: "Sağlık Turizmi Hizmetleri",
+        text: "Hastane seçiminden seyahat planlamasına kadar tüm sağlık turizmi sürecinizi profesyonel olarak yönetiyoruz.",
+      },
     ],
-
     therapeuticTitle: "Sunduğumuz Sağlık Turizmi Hizmetleri",
     therapeuticServices: [
       {
@@ -167,6 +207,16 @@ export const translations = {
         line2: "güvenli ve etkili sonuçlar sunuyoruz.",
       },
     ],
+
+    trustSection: {
+  title: "Güvenilirlik & İş Ortaklarımız",
+  subtitle: "Resmi belgelerimiz ve anlaşmalı olduğumuz seçkin sağlık merkezleri.",
+
+  licenseTitle: "RESMİ YETKİ BELGEMİZ",
+
+  partnerTitle: "ANLAŞMALI OLDUĞUMUZ HASTANELER"
+},
+
 
     aboutTitle: "Hakkımızda",
     aboutText:
@@ -255,10 +305,26 @@ export const translations = {
 
     servicesTitle: "الخدمات التي نقدمها",
     services: [
-      { title: "باقات سياحية", text: "باقات مخصصة حسب اهتماماتك ووقتك." },
-      { title: "حجز فندقي", text: "إقامات مريحة بالقرب من المستشفيات وأهم المواقع." },
-      { title: "خدمة النقل", text: "تنقلات VIP: استقبال من المطار ومواصلات داخل المدينة." },
-      { title: "المرشدون المحليون", text: "مرشدون ومترجمون ومرافقون طوال فترة العلاج." },
+      {
+        title: "باقات سياحية",
+        text: "باقات سياحية مصممة لتمنحكم تجربة مريحة وممتعة أثناء إقامتكم في تركيا.",
+      },
+      {
+        title: "حجز فندقي",
+        text: "نوفر خيارات إقامة مريحة بالقرب من المستشفيات بما يناسب احتياجاتكم وميزانيتكم.",
+      },
+      {
+        title: "خدمة النقل",
+        text: "استقبال من المطار وتنقلات خاصة بسيارات VIP لضمان رحلة آمنة ومريحة.",
+      },
+      {
+        title: "المرشدون المحليون",
+        text: "مترجمون ومستشارون محليون يرافقونكم طوال رحلتكم العلاجية لتسهيل جميع الإجراءات.",
+      },
+      {
+        title: "خدمات السياحة العلاجية",
+        text: "إدارة كاملة لرحلتكم العلاجية بدءًا من اختيار المستشفى وحتى تنظيم السفر والمتابعة المستمرة.",
+      },
     ],
 
     therapeuticTitle: "خدماتنا في مجال السياحة الطبية",
@@ -284,6 +350,15 @@ export const translations = {
         line2: "بخطة آمنة ونتائج متوازنة.",
       },
     ],
+
+  trustSection: {
+  title: "الثقة وشركاؤنا",
+  subtitle: "التراخيص الرسمية والمراكز الطبية التي نتعاون معها.",
+
+  licenseTitle: "ترخيص وزارة الصحة",
+
+  partnerTitle: "المستشفيات المتعاقد معها"
+},
 
     aboutTitle: "معلومات عنا",
     aboutText:
