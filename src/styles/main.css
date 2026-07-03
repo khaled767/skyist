@@ -40,9 +40,21 @@ body{
   object-fit:contain;
   display:block;
 }
+@media(max-width:768px){
+
+.brand-logo{
+
+width:90px;
+
+height:auto;
+
+}
+
+}
+
 
 .nav-center{justify-self:center}
-.nav-links{display:flex;gap:18px;align-items:center}
+.nav-links{display:flex;gap:18px;align-items:center;flex-wrap: wrap;}
 .nav-link{
   border:0;background:transparent;
   padding:10px 12px;border-radius:12px;
@@ -136,13 +148,9 @@ transparent 48%);
 
     display:grid;
     grid-template-columns:1fr 1fr;
-
     align-items:center;
-
     gap:30px;
-
-    min-height:760px;
-
+    min-height:auto;
 }
 
 .hero-left{
@@ -155,39 +163,24 @@ transparent 48%);
 .hero-title{
 
     color:#0f172a;
-
     font-size:60px;
-
     line-height:1.05;
-
     margin-bottom:20px;
-
     font-weight:800;
-
 }
 
 .hero-desc{
-
     color:#334155;
-
     font-size:22px;
-
     line-height:1.8;
-
     max-width:650px;
-
 }
 
 .hero-bullets{
-
     margin-top:22px;
-
     color:#475569;
-
     font-size:20px;
-
     line-height:2;
-
 }
 
 .hero-actions{
@@ -241,20 +234,12 @@ transparent 48%);
 }
 
 .btn.ghost{
-
     color:#0b74c7;
-
     background:#fff;
-
     border:2px solid rgba(11,116,199,.15);
-
 }
 
-.btn.ghost:hover{
-
-    background:#f8fbff;
-
-}
+.btn.ghost:hover{background:#f8fbff;}
 
 
 
@@ -263,19 +248,13 @@ transparent 48%);
 ---------------------------*/
 
 .hero-right{
-
     position:relative;
-
     height:760px;
-
 }
 
 .hero-image-area{
-
     position:absolute;
-
     inset:0;
-
 }
 
 /* Istanbul */
@@ -292,69 +271,44 @@ transparent 48%);
     width:138%;
     height: max-content;
     max-width:none;
-
     opacity:.65;
-
     object-fit:cover;
-
     z-index:1;
-
     pointer-events:none;
 
 }
 
 /* Blue circles */
 
-
-
 /* Doctor */
 
 .hero-doctor{
-
     position:absolute;
-
     right:-80px;
-
     bottom:-50px;
-
     width:600px;
-
     z-index:5;
     /* height: 900px; */
     filter:drop-shadow(0 40px 70px rgba(0,0,0,.22));
-
 }
 
 /* Floating card */
 
 .hero-floating-card{
-
     position:absolute;
-
     left:55%;
     transform:translateX(-50%);
     bottom:35px;
-
     width:640px;
-
     background:rgba(255,255,255,.92);
-
     backdrop-filter:blur(18px);
-
     border-radius:24px;
-
     display:grid;
-
     grid-template-columns:repeat(4,1fr);
-
     padding:22px;
-
     box-shadow:
-
     0 25px 60px rgba(0,0,0,.18);
-
     z-index:10;
-
 }
 
 .hero-item{
@@ -368,82 +322,135 @@ transparent 48%);
     gap:14px;
 }
 .hero-item:not(:last-child)::after{
-
     content:"";
-
     position:absolute;
-
     right:-18px;
-
     top:12%;
-
     width:1px;
-
     height:76%;
-
     background:#e7edf5;
-
 }
 
 .hero-item-icon{
-
     width:52px;
-
     height:52px;
-
     border-radius:16px;
-
     display:flex;
-
     justify-content:center;
-
     align-items:center;
-
     background:linear-gradient(135deg,#0b74c7,#12b3a8);
-
     color:white;
-
 }
 
 .hero-item-icon svg{
-
     width:24px;
-
     height:24px;
-
 }
 
-.hero-item h4{
-  
+.hero-item h4{  
     margin:0;
-
     color:#0f172a;
-
     font-size:24px;
-
     font-weight:700;
-
 }
-
 .hero-item span{
-
     display:block;
-
     color:#64748b;
     margin-top: 4px;
     font-size:17px;
-
 }
 
+@media (max-width:1200px){
+.hero-title{font-size:52px;}
+.hero-desc{font-size:20px;max-width:600px;}
+.hero-bullets{font-size:18px;}
+.hero-layout{gap:20px;}
+.hero-right{height:680px;}
+.hero-doctor{width:520px;right:-40px;}
+.hero-city{width:125%;left:-5%;}
+.hero-floating-card{width:560px;}
+.hero-item h4{font-size:22px;}
+.hero-item span{font-size:16px;}}
+
+@media (max-width:992px){
+.hero-layout{grid-template-columns:1fr;}
+.hero-left{text-align:center;margin:auto;}
+.hero-title{font-size:46px;}
+.hero-desc{margin:auto;font-size:20px;max-width:700px;}
+.hero-bullets{display:inline-block;text-align:left;font-size:18px;}
+.hero-actions{justify-content:center;}
+.hero-right{height:560px;margin-top:30px;}
+.hero-doctor{
+    width:420px;right:50%;transform:translateX(50%);bottom:0;}
+.hero-city{width:110%;left:-5%;}
+.hero-floating-card{
+    max-width:540px;left:50%;transform:translateX(-50%);
+    grid-template-columns:repeat(2,1fr);gap:18px;width:92%;}
+.hero-item h4{font-size:20px;}
+.hero-item span{font-size:16px;}}
 
 
+@media (max-width:980px){
+.hero-title{font-size:48px;}
+.hero-right{height:520px;}
+.hero-doctor{width:420px;right:-20px;bottom:0;}
+.hero-city{width:110%;left:-5%;}
+.hero-floating-card{
+  width:92%;max-width:520px;
+  left:50%;transform:translateX(-50%);
+  grid-template-columns:repeat(2,1fr);}
+  .hero-item h4{font-size:20px;}
+  .hero-layout{grid-template-columns:1fr;}
+  .hero-left{text-align:center;margin:auto;}
+  .hero-desc{margin:auto;font-size: 20px;}
+  .hero-bullets{text-align:left;display:inline-block;}
+  .hero-right{margin-top:30px;}
+  .hero-item span{font-size: 16;}}
 
+@media (max-width:768px){
+  .hero{padding:50px 0 30px;}
+  .hero-title{font-size:40px;}
+  .hero-desc{font-size:18px;line-height:1.7;}
+  .hero-bullets{font-size:17px;}
+  .hero-right{height:500px;}
+  .hero-doctor{width:300px;right:50%;transform:translateX(50%);}
+  .hero-city{width:100%;left:0;}
+  .hero-floating-card{position:relative;left:auto;bottom:auto;transform:none;width:92%;margin:25px auto 0;grid-template-columns:1fr;padding:18px;gap:16px;}
+  .hero-item::after{display:none;}
+  .hero-item h4{font-size:20px;}
+  .hero-item span{font-size:15px;}}
 
+@media (max-width:650px){
+  .hero-title{font-size:40px;}
+  .hero-right{height:500px;}
+  .hero-doctor{width:280px;right:50%;transform:translateX(50%);
+    bottom:0;}
+  .hero-city{width:100%;left:0;}
+  .hero-floating-card{position:relative;
+    left:auto;bottom:auto;transform:none;
+    width:92%;margin:25px auto 0;grid-template-columns:1fr;
+    gap:16px; padding: 18px;}
+  .hero-item h4{font-size:20px;}
+  .hero-desc{font-size: 18px;}
+  .hero-item span{font-size: 15;}
+  .hero-item::after{display:none;}}
 
+@media (max-width:480px){
+.hero-title{font-size:32px;}
+.hero-desc{font-size:16px;}
+.hero-bullets{font-size:16px;line-height:1.8;}
+.hero-actions{flex-direction:column;align-items:center;}
+.btn{width:100%;max-width:300px;}
+.hero-right{height:430px;}
+.hero-doctor{width:240px;}
+.hero-floating-card{width:95%;padding:14px;}
+.hero-item h4{font-size:18px;}
+.hero-item span{font-size:14px;}}
 
+/*---------------------------
+        SECTIONS
+---------------------------*/
 
-
-/* Sections */
 .section{padding:48px 0}
 .section.alt{background:rgba(255,255,255,.55)}
 .section-title{margin:0 0 14px;font-size:30px}
