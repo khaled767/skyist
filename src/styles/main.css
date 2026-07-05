@@ -296,10 +296,11 @@ transparent 48%);
 
 .hero-floating-card{
     position:absolute;
+    gap: 88px;
     left:55%;
     transform:translateX(-50%);
     bottom:35px;
-    width:640px;
+    width:auto;
     background:rgba(255,255,255,.92);
     backdrop-filter:blur(18px);
     border-radius:24px;
@@ -1451,8 +1452,8 @@ height:48px;border:none;border-radius:50%;background:#fff;font-size:26px;cursor:
 .hero-layout{gap:20px;}
 .hero-right{height:680px;}
 .hero-doctor{width:520px;right:-40px;}
-.hero-city{width:125%;left:-5%;}
-.hero-floating-card{width:560px;}
+.hero-city{width:125%;left:-5%;height: 800px;bottom: -40px;}
+.hero-floating-card{width:560px;bottom: 20px;}
 .hero-item h4{font-size:22px;}
 .hero-item span{font-size:16px;}}
 
@@ -1463,25 +1464,25 @@ height:48px;border:none;border-radius:50%;background:#fff;font-size:26px;cursor:
 .hero-desc{margin:auto;font-size:20px;max-width:700px;}
 .hero-bullets{display:inline-block;text-align:left;font-size:18px;}
 .hero-actions{justify-content:center;}
-.hero-right{height:560px;margin-top:30px;}
+.hero-right{height:760px;margin-top:30px;}
 .hero-doctor{
-    width:420px;right:50%;transform:translateX(50%);bottom:0;}
+    width:420px;right:50%;transform:translateX(50%);bottom:-40px;}
 .hero-city{width:110%;left:-5%;}
 .hero-floating-card{
-    max-width:540px;left:50%;transform:translateX(-50%);
-    grid-template-columns:repeat(2,1fr);gap:18px;width:92%;}
+    left:50%;transform:translateX(-50%);
+    grid-template-columns:repeat(4,1fr);gap:18px;width:65%;}
 .hero-item h4{font-size:20px;}
 .hero-item span{font-size:16px;}}
 
 
-@media (max-width:980px){
+/* @media (max-width:980px){
 .hero-title{font-size:48px;}
-.hero-right{height:520px;}
-.hero-doctor{width:420px;right:-20px;bottom:0;}
+.hero-right{height:720px;}
+.hero-doctor{width:420px;right:120px;bottom:-40px;}
 .hero-city{width:110%;left:-5%;}
-.hero-floating-card{
-  width:92%;max-width:520px;
-  left:50%;transform:translateX(-50%);
+.hero-floating-card{opacity: 0.8;
+  width:92%;max-width:420px;
+  left:50%;transform:translateX(-70%);
   grid-template-columns:repeat(2,1fr);}
   .hero-item h4{font-size:20px;}
   .hero-layout{grid-template-columns:1fr;}
@@ -1489,7 +1490,7 @@ height:48px;border:none;border-radius:50%;background:#fff;font-size:26px;cursor:
   .hero-desc{margin:auto;font-size: 20px;}
   .hero-bullets{text-align:left;display:inline-block;}
   .hero-right{margin-top:30px;}
-  .hero-item span{font-size: 16;}}
+  .hero-item span{font-size: 16;}} */
 
 /* ===========================
    TABLET
@@ -1506,10 +1507,10 @@ height:48px;border:none;border-radius:50%;background:#fff;font-size:26px;cursor:
 .hero-actions{justify-content:center;}
 .hero-right{position:relative;height:420px;}
 .hero-city{position:absolute;left:0;bottom:0;width:100%;height:420px;object-fit:cover;border-radius:28px;}
-.hero-doctor{position:absolute;width:260px;right:60px;bottom:0;z-index:5;}
+.hero-doctor{position:absolute;width:330px;right:100px;bottom:0;z-index:5;}
 .hero-floating-card{
-    position:absolute;left:50%;bottom:25px;transform:translateX(-70%);width:90%;max-width:320px;
-    opacity: 0.8;display:grid;grid-template-columns:repeat(2,1fr);padding:20px;gap:18px;z-index:10;
+    position:absolute;left:50%;bottom:20px;transform:translateX(-50%);width:460;max-width:90%;
+    opacity: 0.8;display:grid;grid-template-columns:repeat(4,1fr);padding:14px;gap:18px;z-index:10;
 }
 .hero-item::after{display:none;}
 .hero-item h4{font-size:20px;}
@@ -1531,25 +1532,173 @@ height:48px;border:none;border-radius:50%;background:#fff;font-size:26px;cursor:
 .hero-right{position:relative;    height:360px;}
 .hero-city{position:absolute;width:100%;height:360px;left:0;bottom:0;}
 .hero-doctor{width:220px;right:60px;bottom:0;}
-.hero-floating-card{position:absolute;left:50%;bottom:18px;transform:translateX(-70%);
-            width:42%;opacity: 0.7;max-width:260px;display:grid;padding:8px;gap:16px;}
 .hero-item h4{font-size:19px;}
 .hero-item span{font-size:15px;}
-.hero-item::after{display:none;}}
+.hero-item::after{display:none;}
+.hero-floating-card{
+        width: 400px;
+        max-width: 92%;
+        left: 40%;
+        transform: translateX(-50%);
+        bottom: 18px;
+        padding: 8px;
+        gap: 16px;}}
+
 
 /* ===========================
    SMALL PHONE
 =========================== */
-@media (max-width:480px){
-.hero{padding:15px 0 30px;}
-.hero-title{font-size:32px;}
-.hero-desc{font-size:16px;}
-.hero-bullets{font-size:16px;line-height:1.8;}
-.hero-actions{flex-direction:column;align-items:center;gap:14px;}
-.btn{width:60%;max-width:290px;}
-.hero-right{height:350px;}
-.hero-doctor{width:220px;}
-.hero-floating-card{width:95%;padding:14px;}
-.hero-item h4{font-size:18px;}
-.hero-item span{font-size:14px;}}
 
+@media (max-width:480px){
+
+/* ================= HERO ================= */
+
+.hero{
+    padding:35px 0 25px;
+}
+
+.hero-layout{
+    gap:30px;
+}
+
+.hero-left{
+    text-align:center;
+}
+
+.hero-title{
+    font-size:32px;
+    line-height:1.15;
+    margin-bottom:18px;
+}
+
+.hero-desc{
+    font-size:16px;
+    line-height:1.75;
+    margin:auto;
+}
+
+.hero-bullets{
+    display:inline-block;
+    text-align:left;
+    font-size:15px;
+    line-height:1.8;
+    margin-top:20px;
+}
+
+.hero-actions{
+    flex-direction:column;
+    align-items:center;
+    gap:14px;
+    margin-top:28px;
+}
+
+.btn{
+    width:100%;
+    max-width:290px;
+}
+
+/* ================= IMAGE AREA ================= */
+
+.hero-right{
+
+    position:relative;
+
+    height:420px;
+
+}
+
+.hero-city{
+
+    position:absolute;
+
+    left:0;
+
+    bottom:0;
+
+    width:100%;
+
+    height:250px;
+
+    border-radius:28px;
+
+    object-fit:cover;
+
+    opacity:.9;
+
+}
+
+.hero-doctor{
+
+    position:absolute;
+
+    right:28px;
+
+    bottom:0;
+
+    width:170px;
+
+    z-index:5;
+
+}
+
+/* ================= FLOAT CARD ================= */
+
+.hero-floating-card{
+
+    position:absolute;
+
+    left:40%;
+
+    bottom:10px;
+
+    transform:translateX(-50%);
+
+    width:360px;
+
+    padding:16px;
+
+    display:grid;
+
+    /* grid-template-columns:1fr; */
+
+    gap:18px;
+
+    border-radius:22px;
+
+    z-index:10;
+
+}
+
+.hero-item{
+
+    gap:10px;
+
+}
+
+.hero-item::after{
+
+    display:none;
+
+}
+
+.hero-item-icon{
+
+    width:48px;
+
+    height:48px;
+
+}
+
+.hero-item h4{
+
+    font-size:18px;
+
+}
+
+.hero-item span{
+
+    font-size:14px;
+
+}
+
+}
