@@ -471,31 +471,8 @@ transparent 48%);
 
 }
 
-@media(max-width:992px){
 
-.cards{
 
-grid-template-columns:repeat(2,1fr);
-
-}
-
-}
-
-@media(max-width:650px){
-
-.cards{
-
-grid-template-columns:1fr;
-
-}
-
-.service-image{
-
-height:240px;
-
-}
-
-}
 
 
 
@@ -1034,19 +1011,10 @@ height:240px;
 }
 
 .contact-item.address p{
-  margin: 30px 0 0;
+  margin: 10px 0 0;
  line-height: 1.6;
 }
 
-@media (max-width:768px){
-  .contact-info{
-    padding: 25px;
-  }
-
-  .contact-item{
-    font-size: 16px;
-  }
-}
 .health-side{
 
     display:flex;
@@ -1289,38 +1257,6 @@ body.privacy-mode .policy-card:focus{
     grid-template-columns: 1fr; /* ✅ 1 card */
   }
 }
-@media (max-width: 670px) {
-  /* خليه مثل Phone/Email: عمودين */
-  .contact-item.address{
-    display: grid;
-    grid-template-columns: 80px 1fr; /* label | value */
-    align-items: start;
-    column-gap: 12px;
-    row-gap: 6px;
-
-    /* إلغاء/تخفيف أي ارتفاع أو padding يسبب نزول الصندوق */
-    margin-top: 0;
-    padding-top: 0;
-  }
-
-
-  /* خليه ياخذ عرض العمود الثاني ويتلف بشكل مرتب */
-  .contact-item.address .contact-value{
-    margin: 0;
-    min-width: 0;            /* مهم جدًا مع grid */
-    line-height: 1.45;
-    word-break: break-word;  /* يكسر الكلمات الطويلة إذا لزم */
-    overflow-wrap: anywhere; /* يمنع التخربط عند الشاشات الصغيرة */
-  }
-
-  /* اجعل سطر ESENYURT/ İSTANBUL ثابت كآخر سطر (عندك <br> أصلاً) */
-  .contact-item.address .contact-value br{
-    display: block;
-    content: "";
-    margin-top: 6px;
-  }
-}
-
 
 .therapy-card {
   background: rgba(255, 255, 255, 0.65);
@@ -1455,7 +1391,13 @@ height:48px;border:none;border-radius:50%;background:#fff;font-size:26px;cursor:
 .hero-city{width:125%;left:-5%;height: 800px;bottom: -40px;}
 .hero-floating-card{width:560px;bottom: 20px;}
 .hero-item h4{font-size:22px;}
-.hero-item span{font-size:16px;}}
+.hero-item span{font-size:16px;}
+.trust-section{padding:90px 0;}
+.trust-header{margin-bottom:60px;}
+.trust-header h2{font-size:46px;}
+.trust-header p{font-size:19px;}}
+
+
 
 @media (max-width:992px){
 .hero-layout{grid-template-columns:1fr;}
@@ -1472,25 +1414,73 @@ height:48px;border:none;border-radius:50%;background:#fff;font-size:26px;cursor:
     left:50%;transform:translateX(-50%);
     grid-template-columns:repeat(4,1fr);gap:18px;width:65%;}
 .hero-item h4{font-size:20px;}
-.hero-item span{font-size:16px;}}
+.hero-item span{font-size:16px;}
+
+/* ----------------------------
+         Second Part Cards          
+    ---------------------------*/
+.cards{
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:24px;
+
+}
+
+.service-card{
+
+    border-radius:24px;
+
+}
+
+.service-image{
+
+    height:240px;
+
+}
+
+.service-content{
+
+    padding:24px;
+
+}
+
+.service-content h3{
+
+    font-size:28px;
+
+}
+
+.service-content p{
+
+    font-size:18px;
+
+    line-height:1.7;
+
+}
+
+.card-btn{width:100%;}
+
+.trust-header h2{
+
+    font-size:40px;
+
+}
+
+.trust-header p{
+
+    font-size:18px;
+
+}
+
+.trust-divider{
+    margin: auto;
+    width:260px;
+
+}}
 
 
-/* @media (max-width:980px){
-.hero-title{font-size:48px;}
-.hero-right{height:720px;}
-.hero-doctor{width:420px;right:120px;bottom:-40px;}
-.hero-city{width:110%;left:-5%;}
-.hero-floating-card{opacity: 0.8;
-  width:92%;max-width:420px;
-  left:50%;transform:translateX(-70%);
-  grid-template-columns:repeat(2,1fr);}
-  .hero-item h4{font-size:20px;}
-  .hero-layout{grid-template-columns:1fr;}
-  .hero-left{text-align:center;margin:auto;}
-  .hero-desc{margin:auto;font-size: 20px;}
-  .hero-bullets{text-align:left;display:inline-block;}
-  .hero-right{margin-top:30px;}
-  .hero-item span{font-size: 16;}} */
+
 
 /* ===========================
    TABLET
@@ -1514,7 +1504,52 @@ height:48px;border:none;border-radius:50%;background:#fff;font-size:26px;cursor:
 }
 .hero-item::after{display:none;}
 .hero-item h4{font-size:20px;}
-.hero-item span{font-size:15px;}}
+.hero-item span{font-size:15px;}
+
+.trust-section{
+
+    padding:70px 0;
+
+}
+
+.trust-header{
+
+    margin-bottom:45px;
+
+}
+
+.trust-header h2{
+
+    font-size:34px;
+
+}
+
+.trust-header p{
+
+    font-size:17px;
+
+    max-width:520px;
+
+    margin:auto;}
+.trust-divider{width:220px;}
+.trust-grid{
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:24px;
+
+}
+
+.certificate-card,
+.partners-card{
+    width:100%;
+    max-width:650px;
+
+}
+
+}
+
 
 
 
@@ -1536,14 +1571,48 @@ height:48px;border:none;border-radius:50%;background:#fff;font-size:26px;cursor:
 .hero-item span{font-size:15px;}
 .hero-item::after{display:none;}
 .hero-floating-card{
-        width: 400px;
-        max-width: 92%;
-        left: 40%;
-        transform: translateX(-50%);
-        bottom: 18px;
-        padding: 8px;
-        gap: 16px;}}
+width: 400px;max-width: 92%;left: 40%;transform: translateX(-50%);bottom: 18px;padding: 8px;gap: 16px;}
+/* --------------------------
+        Second Part Cards    
+   -------------------------- */
+.cards{grid-template-columns:1fr;gap:28px;}
+.service-image{height:260px;}
+.service-content{padding:22px;}
+.service-content h3{font-size:26px;}
+.service-content p{font-size:17px;}
 
+/* ============================
+   Partners Grid
+=============================== */
+
+.partners-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;background-color: red}
+.partner-item{width:100%;min-height:360px;}
+.partner-logo{max-width:auto;margin: auto;}
+.partner-main-image{height:210px;object-fit:cover;}
+.partner-thumbnails{gap:8px;}
+.partner-thumbnails img{height:62px;object-fit:cover;}
+
+/* ============================
+   Contact
+=============================== */
+.contact-wrapper{
+  display: grid;grid-template-columns: 1fr;padding: 10px 20px;
+}
+}
+
+/* =====================================
+   Partners Grid
+   <=520px
+===================================== */
+
+@media (max-width:520px){
+
+.partners-grid{grid-template-columns:1fr;gap:20px;}
+.partner-item{max-width:360px;margin:auto;}
+.partner-main-image{height:240px;}
+.partner-logo{max-width:130px;}
+.partner-thumbnails{gap:10px;}
+.partner-thumbnails img{height:72px;}}
 
 /* ===========================
    SMALL PHONE
@@ -1553,152 +1622,111 @@ height:48px;border:none;border-radius:50%;background:#fff;font-size:26px;cursor:
 
 /* ================= HERO ================= */
 
-.hero{
-    padding:35px 0 25px;
-}
-
-.hero-layout{
-    gap:30px;
-}
-
-.hero-left{
-    text-align:center;
-}
-
-.hero-title{
-    font-size:32px;
-    line-height:1.15;
-    margin-bottom:18px;
-}
-
-.hero-desc{
-    font-size:16px;
-    line-height:1.75;
-    margin:auto;
-}
-
-.hero-bullets{
-    display:inline-block;
-    text-align:left;
-    font-size:15px;
-    line-height:1.8;
-    margin-top:20px;
-}
-
-.hero-actions{
-    flex-direction:column;
-    align-items:center;
-    gap:14px;
-    margin-top:28px;
-}
-
-.btn{
-    width:100%;
-    max-width:290px;
-}
+.hero{padding:35px 0 25px;}
+.hero-layout{gap:30px;}
+.hero-left{text-align:center;}
+.hero-title{font-size:32px;line-height:1.15;margin-bottom:18px;}
+.hero-desc{font-size:16px;line-height:1.75;margin:auto;}
+.hero-bullets{display:inline-block;text-align:left;font-size:15px;line-height:1.8;margin-top:20px;}
+.hero-actions{flex-direction:column;align-items:center;gap:14px;margin-top:28px;}
+.btn{width:100%;max-width:290px;}
 
 /* ================= IMAGE AREA ================= */
 
-.hero-right{
-
-    position:relative;
-
-    height:420px;
-
-}
-
-.hero-city{
-
-    position:absolute;
-
-    left:0;
-
-    bottom:0;
-
-    width:100%;
-
-    height:250px;
-
-    border-radius:28px;
-
-    object-fit:cover;
-
-    opacity:.9;
-
-}
-
-.hero-doctor{
-
-    position:absolute;
-
-    right:28px;
-
-    bottom:0;
-
-    width:170px;
-
-    z-index:5;
-
-}
+.hero-right{position:relative;height:420px;}
+.hero-city{position:absolute;left:0;bottom:0;width:100%;height:250px;border-radius:28px;object-fit:cover;opacity:.9;}
+.hero-doctor{position:absolute;right:28px;bottom:0;width:170px;z-index:5;}
 
 /* ================= FLOAT CARD ================= */
 
-.hero-floating-card{
+.hero-floating-card{position:absolute;left:40%;bottom:10px;transform:translateX(-50%);width:360px;
+  padding:16px;display:grid;gap:18px;border-radius:22px;z-index:10;}
+.hero-item{gap:10px;}
+.hero-item::after{display:none;}
+.hero-item-icon{width:48px;height:48px;}
+.hero-item h4{font-size:18px;}
+.hero-item span{font-size:14px;}}
 
-    position:absolute;
+/* ------------------------------
+            Contact Part         
+  -------------------------------*/
 
-    left:40%;
-
-    bottom:10px;
-
-    transform:translateX(-50%);
-
-    width:360px;
-
-    padding:16px;
-
-    display:grid;
-
-    /* grid-template-columns:1fr; */
-
-    gap:18px;
-
-    border-radius:22px;
-
-    z-index:10;
-
+@media (max-width:1225px){
+.section-title.contact-title{
+font-size:42px;
+}
+.contact-info{
+padding:34px;
+}
+.contact-value{
+font-size:18px;
+line-height:1.65;
+}
 }
 
-.hero-item{
-
-    gap:10px;
-
+@media (max-width:1075px){
+.section-title.contact-title{
+font-size:36px;
+}
+.contact-info{
+padding:28px;
+}
+.contact-item{
+display:flex;
+align-items:flex-start;
+gap:14px;
+}
+.contact-label{
+min-width:95px;
+flex-shrink:0;
+}
+.contact-value{
+font-size:16px;
+line-height:1.7;
+word-break:normal;
+overflow-wrap:break-word;
+white-space:normal;
+}
+.contact-value br{
+display:block;
+}
 }
 
-.hero-item::after{
-
-    display:none;
-
+@media (max-width:650px){
+.contact-wrapper{
+display:flex;
+flex-direction:column;
+gap:34px;
 }
-
-.hero-item-icon{
-
-    width:48px;
-
-    height:48px;
-
+.wide-card{
+width:100%;
+order:1;
 }
-
-.hero-item h4{
-
-    font-size:18px;
-
+.health-side{
+width:100%;
+order:2;
+display:flex;
+flex-direction:column;
+align-items:center;
+text-align:center;
 }
-
-.hero-item span{
-
-    font-size:14px;
-
+.health-logo{
+max-width:230px;
+margin-bottom:18px;
 }
-
+.health-card{
+max-width:420px;
+width:100%;
 }
+.contact-item{
+flex-direction:column;
+align-items:flex-start;
+gap:6px;
+}
+.contact-label{
+min-width:auto;
+}
+.contact-value{
+font-size:14px;
+line-height:1.8;
+}}

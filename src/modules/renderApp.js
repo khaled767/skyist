@@ -737,12 +737,12 @@ function setLanguage(lang) {
                 <div class="contact-item address">
                   <span class="contact-label">Address:</span>
 
-                  <p class="contact-value">
-                    ZAFER MAH. 185. SK. BABACAN PREMİUM B BLOK NO: 4 B
-                    <br>
-                    İÇ KAPI NO: 319 ESENYURT / İSTANBUL
-                  </p>
-
+                    <p class="contact-value">
+                      ZAFER MAH. 185. SK.<br>
+                      BABACAN PREMİUM B BLOK NO: 4 B<br>
+                      İÇ KAPI NO: 319 ESENYURT / İSTANBUL
+                    </p>
+                    
                 </div>
 
               </div>
