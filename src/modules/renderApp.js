@@ -1,3 +1,8 @@
+import logo from "../assets/logo.png";
+import doctorImg from "../assets/hero section/new-doctor.webp";
+import istanbulHeorImg from "../assets/hero section/istanbul-twilight.webp";
+import istanbulImg from "../assets/istanbul.jpg";
+
 import { translations } from "./translations";
 import airplaneImg from "../assets/Sunduğumuz Hizmetler/airplane.jpg";
 import hotelRoomImg from "../assets/Sunduğumuz Hizmetler/hotel-room.jpg";
@@ -27,10 +32,7 @@ import hlc1 from "../assets/trust/clinics/HLC1.jpeg";
 import hlc2 from "../assets/trust/clinics/HLC2.jpeg";
 
 
-import logo from "../assets/logo.png";
-import doctorImg from "../assets/hero section/new-doctor.webp";
-import istanbulHeorImg from "../assets/hero section/istanbul-twilight.webp";
-import istanbulImg from "../assets/istanbul.jpg";
+
 
 // ✅ NEW: real images (place them in src/assets/services/)
 // IMPORTANT: rename files to avoid spaces (recommended)
@@ -742,7 +744,7 @@ function setLanguage(lang) {
                       BABACAN PREMİUM B BLOK NO: 4 B<br>
                       İÇ KAPI NO: 319 ESENYURT / İSTANBUL
                     </p>
-                    
+
                 </div>
 
               </div>
